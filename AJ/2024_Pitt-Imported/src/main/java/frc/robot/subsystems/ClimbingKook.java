@@ -11,7 +11,7 @@ public class ClimbingKook extends SubsystemBase{
     SparkMax ClimbingMotor;
 
     public ClimbingKook() {
-        ClimbingMotor = new SparkMax(14, MotorType.kBrushless);
+       // ClimbingMotor = new SparkMax(14, MotorType.kBrushless);
 
     } 
     
