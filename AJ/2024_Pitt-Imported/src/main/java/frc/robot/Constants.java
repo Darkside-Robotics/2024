@@ -52,21 +52,58 @@ public final class Constants {
         public static final boolean kFrontRightDriveEncoderReversed = true;
         public static final boolean kBackRightDriveEncoderReversed = true;
 
-        public static final int kFrontLeftDriveAbsoluteEncoderPort = 0; //NEED
-        public static final int kBackLeftDriveAbsoluteEncoderPort = 3;//maybe switch with 3
-        public static final int kFrontRightDriveAbsoluteEncoderPort = 1;
-        public static final int kBackRightDriveAbsoluteEncoderPort = 2;
+        
 
-        public static final boolean kFrontLeftDriveAbsoluteEncoderReversed = true;
-        public static final boolean kBackLeftDriveAbsoluteEncoderReversed = true;
-        public static final boolean kFrontRightDriveAbsoluteEncoderReversed = true;
-        public static final boolean kBackRightDriveAbsoluteEncoderReversed = true;
+        //public static final boolean kFrontLeftDriveAbsoluteEncoderReversed = true;
+        //public static final boolean kBackLeftDriveAbsoluteEncoderReversed = true;
+        //public static final boolean kFrontRightDriveAbsoluteEncoderReversed = true;
+        //public static final boolean kBackRightDriveAbsoluteEncoderReversed = true;
 
-        public static final double kFrontLeftDriveAbsoluteEncoderOffsetRad = 0.84;  //NEED
-        public static final double kBackLeftDriveAbsoluteEncoderOffsetRad = 5.24;
-        public static final double kFrontRightDriveAbsoluteEncoderOffsetRad = 2.53;
-        public static final double kBackRightDriveAbsoluteEncoderOffsetRad = 2.82;
+        //public static final double kBackLeftDriveAbsoluteEncoderOffsetRad = -0.75;
+        //public static final double kFrontRightDriveAbsoluteEncoderOffsetRad = -0.49 ;
 
+
+        //public static final int kFrontLeftDriveAbsoluteEncoderPort = 0; //NEED
+       //public static final int kBackLeftDriveAbsoluteEncoderPort = 3;//maybe switch with 3
+        //public static final int kFrontRightDriveAbsoluteEncoderPort = 1;
+        //public static final int kBackRightDriveAbsoluteEncoderPort = 2;
+
+        public static final class AbsoluteEncoders
+        {
+            public static final class Front
+            {
+                public static final class Left
+                {
+                    public static final double Offset = 1.63;  //NEED        
+                    public static final boolean Reversed = true ;
+                    public static final int Port = 0;
+                }// 3.14 1.57, 0.785
+                public static final class Right
+                {
+                    public static final double Offset = -0.12;  //NEED       
+                    public static final boolean Reversed = true ;
+                    public static final int Port = 1;
+                }
+            }
+
+            public static final class Back
+            {
+                public static final class Left
+                {
+                    public static final double Offset = 2.9;  //NEED        
+                    public static final boolean Reversed = true ;
+                    public static final int Port = 3;
+                }
+                public static final class Right
+                {
+                    public static final double Offset = -0.69;  //NEED       
+                    public static final boolean Reversed = true ;
+                    public static final int Port = 2;
+                }
+
+            }
+        }
+      
         public static final double kPhysicalMaxSpeedMetersPerSecond = 4.6;
         public static final double kPhysicalMaxAngularSpeedRadiansPerSecond = 2 * 2 * Math.PI;
 
