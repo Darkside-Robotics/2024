@@ -19,29 +19,29 @@ public class SwerveSubsystem extends SubsystemBase {
             DriveConstants.kFrontLeftTurningMotorPort,
             DriveConstants.kFrontLeftDriveEncoderReversed,
             DriveConstants.kFrontLeftTurningEncoderReversed,
-            DriveConstants.kFrontLeftDriveAbsoluteEncoderPort,
-            DriveConstants.kFrontLeftDriveAbsoluteEncoderOffsetRad,
-            DriveConstants.kFrontLeftDriveAbsoluteEncoderReversed,
-            "Front Left", true);
+            DriveConstants.AbsoluteEncoders.Front.Left.Port,
+            DriveConstants.AbsoluteEncoders.Front.Left.Offset,
+            DriveConstants.AbsoluteEncoders.Front.Left.Reversed,
+            "Front Left", false);
 
     private final SwerveModule frontRight = new SwerveModule(
             DriveConstants.kFrontRightDriveMotorPort,
             DriveConstants.kFrontRightTurningMotorPort,
             DriveConstants.kFrontRightDriveEncoderReversed,
             DriveConstants.kFrontRightTurningEncoderReversed,
-            DriveConstants.kFrontRightDriveAbsoluteEncoderPort,
-            DriveConstants.kFrontRightDriveAbsoluteEncoderOffsetRad,
-            DriveConstants.kFrontRightDriveAbsoluteEncoderReversed,
-            "Front Right", true);
+            DriveConstants.AbsoluteEncoders.Front.Right.Port,
+            DriveConstants.AbsoluteEncoders.Front.Right.Offset,
+            DriveConstants.AbsoluteEncoders.Front.Right.Reversed,
+            "Front Right", false);
 
     private final SwerveModule backLeft = new SwerveModule(
             DriveConstants.kBackLeftDriveMotorPort,
             DriveConstants.kBackLeftTurningMotorPort,
             DriveConstants.kBackLeftDriveEncoderReversed,
             DriveConstants.kBackLeftTurningEncoderReversed,
-            DriveConstants.kBackLeftDriveAbsoluteEncoderPort,
-            DriveConstants.kBackLeftDriveAbsoluteEncoderOffsetRad,
-            DriveConstants.kBackLeftDriveAbsoluteEncoderReversed,
+            DriveConstants.AbsoluteEncoders.Back.Left.Port,
+            DriveConstants.AbsoluteEncoders.Back.Left.Offset,
+            DriveConstants.AbsoluteEncoders.Back.Left.Reversed,
             "Back Left", false);
 
     private final SwerveModule backRight = new SwerveModule(
@@ -49,10 +49,10 @@ public class SwerveSubsystem extends SubsystemBase {
             DriveConstants.kBackRightTurningMotorPort,
             DriveConstants.kBackRightDriveEncoderReversed,
             DriveConstants.kBackRightTurningEncoderReversed,
-            DriveConstants.kBackRightDriveAbsoluteEncoderPort,
-            DriveConstants.kBackRightDriveAbsoluteEncoderOffsetRad,
-            DriveConstants.kBackRightDriveAbsoluteEncoderReversed,
-            "Back Right", true);
+            DriveConstants.AbsoluteEncoders.Back.Right.Port,
+            DriveConstants.AbsoluteEncoders.Back.Right.Offset,
+            DriveConstants.AbsoluteEncoders.Back.Right.Reversed,
+            "Back Right", false);
 
             public static ADXRS450_Gyro gyro = new ADXRS450_Gyro();
             SwerveModulePosition[] modulePositions = {

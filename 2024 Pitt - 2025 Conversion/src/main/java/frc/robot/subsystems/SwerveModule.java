@@ -117,7 +117,7 @@ public class SwerveModule {
         public double getAbsoluteEncoderRad() {
             double angle = absoluteEncoder.get();//getAbsolutePosition();
             //double angle = absoluteEncoder.getVoltage() / RobotController.getVoltage5V();
-            SmartDashboard.putNumber("Absolute Encoder Value("+name+")" + absoluteEncoder.getChannel(), angle);
+            SmartDashboard.putNumber("Absolute Encoder Value("+name+") " + absoluteEncoder.getChannel(), angle);
             angle *= 2.0 * Math.PI;
             angle -= absoluteEncoderOffsetRad;
             SmartDashboard.putNumber("Absolute Encoder Angle("+name+")" + absoluteEncoder.getChannel(), angle);
