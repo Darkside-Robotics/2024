@@ -74,13 +74,13 @@ public final class Constants {
             {
                 public static final class Left
                 {
-                    public static final double Offset = 1.63;  //NEED        
+                    public static final double Offset = 1.61;  //NEED        
                     public static final boolean Reversed = true ;
                     public static final int Port = 0;
                 }// 3.14 1.57, 0.785
                 public static final class Right
                 {
-                    public static final double Offset = -0.12;  //NEED       
+                    public static final double Offset = -.18;  //NEED       
                     public static final boolean Reversed = true ;
                     public static final int Port = 1;
                 }
@@ -90,13 +90,13 @@ public final class Constants {
             {
                 public static final class Left
                 {
-                    public static final double Offset = 2.9;  //NEED        
+                    public static final double Offset = 2.94;  //NEED        
                     public static final boolean Reversed = true ;
                     public static final int Port = 3;
                 }
                 public static final class Right
                 {
-                    public static final double Offset = -0.69;  //NEED       
+                    public static final double Offset = 5.55;  //NEED       
                     public static final boolean Reversed = true ;
                     public static final int Port = 2;
                 }
